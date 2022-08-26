@@ -1,0 +1,17 @@
+<h1>Picker</h1>
+<mat-form-field>
+  <input
+    matInput
+    type="text"
+    readonly
+    [(ngModel)]="ngModel"
+    name="testControl"
+    [matDatepicker]="picker"
+    [matDatepickerFilter]="matDatepickerFilter"
+  />
+  <mat-datepicker-toggle matSuffix [for]="picker">
+    <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
+  </mat-datepicker-toggle>
+  <mat-datepicker #picker disabled="false"></mat-datepicker>
+</mat-form-field>
+test
